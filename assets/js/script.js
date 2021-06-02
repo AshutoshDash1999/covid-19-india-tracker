@@ -3,9 +3,15 @@ async function getCovidapi(){
     
 
     const jsdata = await jsondata.json();
+    console.log(jsdata)
     // console.log(jsdata.Countries[76].Country);
-    NewConfirmed_global = jsdata.Global.NewConfirmed;
-    console.log(NewConfirmed_global)
+    TotalConfirmed_global = jsdata.Global.TotalConfirmed;
+    TotalRecovered_global = jsdata.Global.TotalRecovered;
+    TotalDeaths_global = jsdata.Global.TotalDeaths;
+    
+    document.getElementById("worldwide-confirmed").innerHTML = TotalConfirmed_global.toLocaleString('hi');
+    document.getElementById("worldwide-recovered").innerHTML = TotalRecovered_global.toLocaleString('hi');
+    document.getElementById("worldwide-death").innerHTML = TotalDeaths_global.toLocaleString('hi');
 }
 
 getCovidapi();
