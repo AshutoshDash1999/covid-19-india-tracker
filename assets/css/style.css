@@ -19,7 +19,7 @@ body{
     backdrop-filter: blur( 6.5px );
     -webkit-backdrop-filter: blur( 6.5px );
     border-radius: 10px;
-    border: 1px solid rgba(230, 15, 15, 0.596);
+    border: 1px solid rgba(70, 69, 69, 0.596);
 }
 
 .recovered{
