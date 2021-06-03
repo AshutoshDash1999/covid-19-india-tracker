@@ -5,6 +5,16 @@ body{
     background-size: cover;
 }
 
+/* splash screen css starts here  */
+#loading{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #02081f url("https://media.giphy.com/media/dVuyBgq2z5gVBkFtDc/giphy.gif") no-repeat center center;
+    z-index: 99999;
+}
+/* splash screen css ends here  */
+
 .hero-figure{
     padding: 1rem;
 }
