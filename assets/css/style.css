@@ -10,7 +10,7 @@ body{
 }
 
 .bg-glass{
-    background: rgba(1, 1, 26, 0.664);
+    background: rgba(0, 0, 30, 0.884);
     box-shadow: 0 8px 32px 0 rgba(31, 33, 135, 0.37);
     backdrop-filter: blur( 6.5px );
     -webkit-backdrop-filter: blur( 6.5px );
