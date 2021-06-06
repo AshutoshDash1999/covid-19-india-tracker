@@ -12,6 +12,7 @@ async function getCovidapi(){
     document.getElementById("worldwide-confirmed").innerHTML = TotalConfirmed_global.toLocaleString('hi');
     document.getElementById("worldwide-recovered").innerHTML = TotalRecovered_global.toLocaleString('hi');
     document.getElementById("worldwide-death").innerHTML = TotalDeaths_global.toLocaleString('hi');
+    
 }
 
 getCovidapi();

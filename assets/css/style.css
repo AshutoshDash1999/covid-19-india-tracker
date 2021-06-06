@@ -18,6 +18,11 @@ body{
     border: 1px solid rgba(252, 248, 248, 0.192);
 }
 
+.brand{
+    display: flex;
+    justify-content: space-between;
+}
+
 /* splash screen css starts here  */
 #loading{
     position: fixed;
