@@ -9,6 +9,10 @@ body{
     background-size: cover;
 }
 
+.navbar{
+    width: 100%;
+}
+
 .bg-glass{
     background: rgba(0, 0, 30, 0.884);
     box-shadow: 0 8px 32px 0 rgba(31, 33, 135, 0.37);
