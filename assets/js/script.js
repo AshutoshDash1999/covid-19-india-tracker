@@ -16,3 +16,8 @@ async function getCovidapi(){
 }
 
 getCovidapi();
+
+function dark_mode(){
+    document.body.style.backgroundColor = "#202123";
+    document.getElementById("text").style.color = "#f9f9f9";
+}
