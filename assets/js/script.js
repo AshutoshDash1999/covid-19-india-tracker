@@ -1,7 +1,5 @@
 async function getCovidapi(){
     const jsondata = await fetch('https://api.covid19api.com/summary');
-    
-
     const jsdata = await jsondata.json();
     console.log(jsdata)
     // console.log(jsdata.Countries[76].Country);
@@ -14,7 +12,6 @@ async function getCovidapi(){
     document.getElementById("worldwide-death").innerHTML = TotalDeaths_global.toLocaleString('hi');
     
 }
-
 getCovidapi();
 
 function dark_mode(){
