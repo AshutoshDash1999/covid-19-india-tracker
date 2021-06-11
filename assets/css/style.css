@@ -1,8 +1,27 @@
+html{
+    min-height: 100%;
+}
+
 body{
     margin: 0;
     padding: 0;
-    background: url(../img/bg-corona.jpeg) no-repeat center center fixed;
-    background-size: cover;
+    background: #f9f9f9
+}
+
+.navbar{
+    width: 100%;
+}
+
+.bg-glass{
+    background: #473f97;
+    box-shadow: 0 8px 12px 0 rgba(31, 33, 135, 0.37);
+    border-radius: 15px;
+    border: 1px solid rgba(252, 248, 248, 0.192);
+}
+
+.brand{
+    display: flex;
+    justify-content: space-between;
 }
 
 /* splash screen css starts here  */
@@ -17,35 +36,47 @@ body{
 
 .hero-figure{
     padding: 1rem;
+    color: #1a1818;
 }
 
 .card{
     color: aliceblue;
+    width: 12rem;
+    margin: 5px;
 }
 
 .confirmed{
-    background: rgba(236, 47, 47, 0.308);
-    box-shadow: 0 8px 32px 0 rgba(31, 33, 135, 0.37);
-    backdrop-filter: blur( 6.5px );
-    -webkit-backdrop-filter: blur( 6.5px );
-    border-radius: 10px;
-    border: 1px solid rgba(70, 69, 69, 0.596);
+    background: #ff5959;
+    box-shadow: 0 8px 22px 0 rgba(31, 33, 135, 0.37);
+    border: 1px solid rgba(252, 248, 248, 0.192);
+    border-radius: 15px;
 }
 
 .recovered{
-    background: rgba( 5, 200, 18, 0.25 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 11.5px );
-    -webkit-backdrop-filter: blur( 11.5px );
-    border-radius: 10px;
+    background: #4cd97b;
+    box-shadow: 0 8px 22px 0 rgba( 31, 38, 135, 0.37 );
     border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border-radius: 15px;
 }
 
 .death{
-    background: rgba( 74, 77, 74, 0.25 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 11.5px );
-    -webkit-backdrop-filter: blur( 11.5px );
-    border-radius: 10px;
+    background: #95a5a6;
+    box-shadow: 0 8px 22px 0 rgba( 31, 38, 135, 0.37 );
     border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border-radius: 15px;
+}
+
+iframe{
+    background: rgba(16, 65, 228, 0.3);
+    box-shadow: 0 8px 22px 0 rgba( 31, 38, 135, 0.37 );
+    border-radius: 10px;
+}
+
+.table{
+    background: rgba( 255, 255, 255, 0.25 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
