@@ -70,6 +70,14 @@
           </div>
         </div>
         <div class="col-sm">
+          <div class="card new_confirmed">
+            <div class="card-body">
+              <h5 class="card-title">New Confirmed</h5>
+              <p class="card-text" id="worldwide-new_confirmed"></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm">
           <div class="card recovered">
             <div class="card-body">
               <h5 class="card-title">Recovered</h5>
@@ -98,7 +106,14 @@
             </div>
           </div>
         </div>
-
+        <div class="col-sm">
+          <div class="card new_confirmed">
+            <div class="card-body">
+              <h5 class="card-title">New Confirmed</h5>
+              <p class="card-text" id="india-new_confirmed"></p>
+            </div>
+          </div>
+        </div>
         <div class="col-sm">
           <div class="card recovered">
             <div class="card-body">
@@ -595,9 +610,9 @@
             var index = length - 1;
             var value = data.data[index];
             console.log(value);
-            total = `${value.summary.confirmedCasesIndian}`;
-            death = `${value.summary.deaths}`;
-            recovery = `${value.summary.discharged}`;
+            total = `${value.summary.confirmedCasesIndian.toLocaleString("hi")}`;
+            death = `${value.summary.deaths.toLocaleString("hi")}`;
+            recovery = `${value.summary.discharged.toLocaleString("hi")}`;
 
             $("#india-confirmed").html(total);
             $("#india-death").html(death);

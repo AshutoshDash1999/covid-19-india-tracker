@@ -6,13 +6,20 @@ async function getCovidapi() {
   TotalConfirmed_global = jsdata.Global.TotalConfirmed;
   TotalRecovered_global = jsdata.Global.TotalRecovered;
   TotalDeaths_global = jsdata.Global.TotalDeaths;
+  NewConfirmed_global = jsdata.Global.NewConfirmed;
 
   document.getElementById("worldwide-confirmed").innerHTML =
     TotalConfirmed_global.toLocaleString("hi");
+  document.getElementById("worldwide-new_confirmed").innerHTML =
+    NewConfirmed_global.toLocaleString("hi");
   document.getElementById("worldwide-recovered").innerHTML =
     TotalRecovered_global.toLocaleString("hi");
   document.getElementById("worldwide-death").innerHTML =
     TotalDeaths_global.toLocaleString("hi");
+
+  NewConfirmed_india = jsdata.Countries[76].NewConfirmed;
+  document.getElementById("india-new_confirmed").innerHTML =
+    NewConfirmed_india.toLocaleString("hi");
 }
 getCovidapi();
 
