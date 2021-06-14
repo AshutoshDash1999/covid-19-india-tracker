@@ -597,29 +597,5 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/script.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script>
-      $(document).ready(function () {
-        init();
-
-        function init() {
-          var url = "https://api.rootnet.in/covid19-in/stats/history";
-
-          $.get(url, function (data) {
-            console.log(data.data);
-            var length = data.data.length;
-            var index = length - 1;
-            var value = data.data[index];
-            console.log(value);
-            total = `${value.summary.confirmedCasesIndian.toLocaleString("hi")}`;
-            death = `${value.summary.deaths.toLocaleString("hi")}`;
-            recovery = `${value.summary.discharged.toLocaleString("hi")}`;
-
-            $("#india-confirmed").html(total);
-            $("#india-death").html(death);
-            $("#india-recovered").html(recovery);
-          });
-        }
-      });
-    </script>
   </body>
 </html>
