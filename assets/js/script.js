@@ -36,6 +36,23 @@ getCovidapi();
 function dark_mode() {
   document.body.style.backgroundColor = "#202123";
   document.getElementById("text").style.color = "#f9f9f9";
+  document.getElementsByClassName("confirmed")[0].style.backgroundColor = "black";
+  document.getElementsByClassName("confirmed")[0].style.color = "red";
+  document.getElementsByClassName("confirmed")[1].style.backgroundColor = "black";
+  document.getElementsByClassName("confirmed")[1].style.color = "red";
+  document.getElementsByClassName("new_confirmed")[0].style.backgroundColor = "black";
+  document.getElementsByClassName("new_confirmed")[0].style.color = "blue";
+  document.getElementsByClassName("new_confirmed")[1].style.backgroundColor = "black";
+  document.getElementsByClassName("new_confirmed")[1].style.color = "blue";
+  document.getElementsByClassName("recovered")[0].style.backgroundColor = "black";
+  document.getElementsByClassName("recovered")[0].style.color = "green";
+  document.getElementsByClassName("recovered")[1].style.backgroundColor = "black";
+  document.getElementsByClassName("recovered")[1].style.color = "green";
+  document.getElementsByClassName("death")[0].style.backgroundColor = "black";
+  document.getElementsByClassName("death")[0].style.color = "white";
+  document.getElementsByClassName("death")[1].style.backgroundColor = "black";
+  document.getElementsByClassName("death")[1].style.color = "white";
+
 }
 
 var url = "https://api.rootnet.in/covid19-in/stats/history";
