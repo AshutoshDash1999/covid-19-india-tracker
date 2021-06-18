@@ -78,9 +78,10 @@ fetch(url)
         var recovered = table.rows[i].cells[3];
         var deaths = table.rows[i].cells[4];
         states.innerHTML = value.regional[i].loc;
-        confirmed.innerHTML = value.regional[i].totalConfirmed;
-        recovered.innerHTML = value.regional[i].discharged;
-        deaths.innerHTML = value.regional[i].deaths;
+        confirmed.innerHTML =
+          value.regional[i].totalConfirmed.toLocaleString("hi");
+        recovered.innerHTML = value.regional[i].discharged.toLocaleString("hi");
+        deaths.innerHTML = value.regional[i].deaths.toLocaleString("hi");
       }
     }
   });
