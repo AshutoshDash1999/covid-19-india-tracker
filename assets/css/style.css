@@ -14,10 +14,14 @@ body {
 }
 
 .bg-glass {
-  background: #473f97;
+  background: rgba(57, 46, 179, 0.664);
   box-shadow: 0 8px 12px 0 rgba(31, 33, 135, 0.37);
   border-radius: 15px;
+  backdrop-filter: blur( 18.0px );
+
   border: 1px solid rgba(252, 248, 248, 0.192);
+  position: fixed;
+  z-index: 1000;
 }
 
 .brand {
@@ -39,6 +43,7 @@ body {
 
 .hero-figure {
   padding: 1rem;
+  padding-top: 4rem;
   color: #1a1818;
 }
 

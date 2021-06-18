@@ -41,9 +41,9 @@ function dark_mode() {
   document.getElementsByClassName("confirmed")[1].style.backgroundColor = "black";
   document.getElementsByClassName("confirmed")[1].style.color = "red";
   document.getElementsByClassName("new_confirmed")[0].style.backgroundColor = "black";
-  document.getElementsByClassName("new_confirmed")[0].style.color = "blue";
+  document.getElementsByClassName("new_confirmed")[0].style.color = "#1796fd";
   document.getElementsByClassName("new_confirmed")[1].style.backgroundColor = "black";
-  document.getElementsByClassName("new_confirmed")[1].style.color = "blue";
+  document.getElementsByClassName("new_confirmed")[1].style.color = "#1796fd";
   document.getElementsByClassName("recovered")[0].style.backgroundColor = "black";
   document.getElementsByClassName("recovered")[0].style.color = "green";
   document.getElementsByClassName("recovered")[1].style.backgroundColor = "black";
