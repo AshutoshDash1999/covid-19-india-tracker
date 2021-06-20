@@ -85,3 +85,22 @@ fetch(url)
       }
     }
   });
+
+// terminal effect on the hero text 
+var typed = new Typed("#typed", {
+  strings: [
+    "#Stay Home...",
+    "#Stay Alert...",
+    "#Save Lives...",
+    "#Wash Your Hands...",
+    "#Wear Mask...",
+    "#Keep Social Distance...",
+  ],
+  smartBackspace: true, // Default value
+  typeSpeed: 40,
+  backSpeed: 25,
+  loop: true,
+  loopCount: Infinity,
+  startDelay: 0,
+  showCursor: false,
+});

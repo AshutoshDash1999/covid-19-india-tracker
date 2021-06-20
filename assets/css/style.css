@@ -10,15 +10,15 @@ body {
 }
 
 body::-webkit-scrollbar {
-  width: 0.55rem;
+  width: 0.25rem;
 }
 
 body::-webkit-scrollbar-track {
-  background: #898a8b;
+  background: #f5f5f5;
 }
 
 body::-webkit-scrollbar-thumb {
-  background: #4a3583;
+  background: #ac9dd6;
   border-radius: 20px; 
 }
 
@@ -27,7 +27,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .bg-glass {
-  background: rgba(57, 46, 179, 0.664);
+  background: rgba(100, 72, 170, 0.75);
   box-shadow: 0 8px 12px 0 rgba(31, 33, 135, 0.37);
   border-radius: 0 0 15px 15px;
   backdrop-filter: blur( 18.0px );
@@ -144,7 +144,7 @@ footer{
   color: whitesmoke;
   bottom: 0px;
   width: 100%;
-  background: rgb(57, 46, 179);
+  background: linear-gradient(90deg, #8966e9, #664aae);
 }
 .main-content{
   display: flex;
@@ -175,7 +175,7 @@ footer{
   content: '';
   height: 2px;
   width: 15%;
-  background: #f12020;
+  background: #f18a02;
   top: -10px;
 }
 .left .content p{
@@ -198,7 +198,7 @@ footer{
   transition: 0.3s;
 }
 .left .content .social a span:hover{
-  background: #f12020;
+  background: #f18a02;
 }
 .center .content .fas{
   font-size: 1.4375rem;
@@ -212,7 +212,7 @@ footer{
   cursor: pointer;
 }
 .center .content .fas:hover{
-  background: #f12020;
+  background: #f18a02;
 }
 .center .content .text{
   font-size: 1.0625rem;
@@ -235,7 +235,7 @@ footer{
   font-size: 1.0625rem;
   background: #e9e7e7;
   padding-left: 10px;
-  border: 1px solid #222222;
+  border: 2px solid #222222;
   border-radius: 15px;
 }
 .right form input:focus,
@@ -261,7 +261,7 @@ footer{
   border-radius: 10px;
 }
 .right form .btn button:hover{
-  background: #000;
+  background: rgb(223, 129, 6);
 }
 .bottom center{
   padding: 5px;
@@ -272,7 +272,7 @@ footer{
   color: #656565;
 }
 .bottom center a{
-  color: #f12020;
+  color: #fc8906;
   text-decoration: none;
 }
 .bottom center a:hover{
