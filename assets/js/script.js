@@ -33,27 +33,6 @@ async function getCovidapi() {
 }
 getCovidapi();
 
-function dark_mode() {
-  document.body.style.backgroundColor = "#202123";
-  document.getElementById("text").style.color = "#f9f9f9";
-  document.getElementsByClassName("confirmed")[0].style.backgroundColor = "black";
-  document.getElementsByClassName("confirmed")[0].style.color = "red";
-  document.getElementsByClassName("confirmed")[1].style.backgroundColor = "black";
-  document.getElementsByClassName("confirmed")[1].style.color = "red";
-  document.getElementsByClassName("new_confirmed")[0].style.backgroundColor = "black";
-  document.getElementsByClassName("new_confirmed")[0].style.color = "#1796fd";
-  document.getElementsByClassName("new_confirmed")[1].style.backgroundColor = "black";
-  document.getElementsByClassName("new_confirmed")[1].style.color = "#1796fd";
-  document.getElementsByClassName("recovered")[0].style.backgroundColor = "black";
-  document.getElementsByClassName("recovered")[0].style.color = "green";
-  document.getElementsByClassName("recovered")[1].style.backgroundColor = "black";
-  document.getElementsByClassName("recovered")[1].style.color = "green";
-  document.getElementsByClassName("death")[0].style.backgroundColor = "black";
-  document.getElementsByClassName("death")[0].style.color = "white";
-  document.getElementsByClassName("death")[1].style.backgroundColor = "black";
-  document.getElementsByClassName("death")[1].style.color = "white";
-
-}
 
 var url = "https://api.rootnet.in/covid19-in/stats/history";
 
@@ -86,6 +65,26 @@ fetch(url)
     }
   });
 
+
+//Dark Mode
+const options = {
+	bottom: '64px', // default: '32px'
+  right: '32px', // default: '32px'
+  left: 'unset', // default: 'unset'
+  time: '0.5s', // default: '0.3s'
+  mixColor: '#fff', // default: '#fff'
+  backgroundColor: '#fff',  // default: '#fff'
+  buttonColorDark: '#100f2c',  // default: '#100f2c'
+  buttonColorLight: '#fff', // default: '#fff'
+  saveInCookies: false, // default: true,
+  label: '🌓', // default: ''
+  autoMatchOsTheme: true // default: true
+}
+
+const darkmode = new Darkmode(options);
+darkmode.showWidget();
+
+
 // terminal effect on the hero text 
 var typed = new Typed("#typed", {
   strings: [
@@ -97,8 +96,8 @@ var typed = new Typed("#typed", {
     "#Keep Social Distance...",
   ],
   smartBackspace: true, // Default value
-  typeSpeed: 40,
-  backSpeed: 25,
+  typeSpeed: 40, //50
+  backSpeed: 25, //50
   loop: true,
   loopCount: Infinity,
   startDelay: 0,
