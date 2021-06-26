@@ -76,7 +76,7 @@ const options = {
   backgroundColor: '#fff',  // default: '#fff'
   buttonColorDark: '#100f2c',  // default: '#100f2c'
   buttonColorLight: '#fff', // default: '#fff'
-  saveInCookies: false, // default: true,
+  saveInCookies: true, // default: true,
   label: '🌓', // default: ''
   autoMatchOsTheme: true // default: true
 }
@@ -96,8 +96,8 @@ var typed = new Typed("#typed", {
     "#Keep Social Distance...",
   ],
   smartBackspace: true, // Default value
-  typeSpeed: 40, //50
-  backSpeed: 25, //50
+  typeSpeed: 50, 
+  backSpeed: 55, 
   loop: true,
   loopCount: Infinity,
   startDelay: 0,
