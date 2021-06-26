@@ -278,6 +278,11 @@ footer{
 .bottom center a:hover{
   text-decoration: underline;
 }
+
+.email a{
+  color: whitesmoke;
+  text-decoration: none;
+}
 @media screen and (max-width: 900px) {
   footer{
     position: relative;
