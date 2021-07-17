@@ -1,12 +1,12 @@
 async function getCovidapi() {
-  const jsondata = await fetch("https://api.covid19api.com/summary");
+  const jsondata = await fetch("https://mazitekgh.com/covid19/v1/");
   const jsdata = await jsondata.json();
   console.log(jsdata);
   // console.log(jsdata.Countries[76].Country);
-  TotalConfirmed_global = jsdata.Global.TotalConfirmed;
-  TotalRecovered_global = jsdata.Global.TotalRecovered;
-  TotalDeaths_global = jsdata.Global.TotalDeaths;
-  NewConfirmed_global = jsdata.Global.NewConfirmed;
+  TotalConfirmed_global = jsdata.global.confirmed;
+  TotalRecovered_global = jsdata.global.recovered;
+  TotalDeaths_global = jsdata.global.deaths;
+  NewConfirmed_global = jsdata.global.existing;
 
   document.getElementById("worldwide-confirmed").innerHTML =
     TotalConfirmed_global.toLocaleString("hi");
@@ -17,19 +17,19 @@ async function getCovidapi() {
   document.getElementById("worldwide-death").innerHTML =
     TotalDeaths_global.toLocaleString("hi");
 
-  TotalConfirmed_india = jsdata.Countries[76].TotalConfirmed;
-  NewConfirmed_india = jsdata.Countries[76].NewConfirmed;
-  Recovered_india = jsdata.Countries[76].TotalRecovered;
-  TotalDeaths_india = jsdata.Countries[76].TotalDeaths;
+  // TotalConfirmed_india = jsdata.Countries[76].TotalConfirmed;
+  // NewConfirmed_india = jsdata.Countries[76].NewConfirmed;
+  // Recovered_india = jsdata.Countries[76].TotalRecovered;
+  // TotalDeaths_india = jsdata.Countries[76].TotalDeaths;
 
-  document.getElementById("india-confirmed").innerHTML =
-    TotalConfirmed_india.toLocaleString("hi");
-  document.getElementById("india-new_confirmed").innerHTML = 
-    NewConfirmed_india.toLocaleString("hi");
-  document.getElementById("india-recovered").innerHTML =
-    Recovered_india.toLocaleString("hi");
-  document.getElementById("india-death").innerHTML =
-    TotalDeaths_india.toLocaleString("hi");
+  // document.getElementById("india-confirmed").innerHTML =
+  //   TotalConfirmed_india.toLocaleString("hi");
+  // document.getElementById("india-new_confirmed").innerHTML = 
+  //   NewConfirmed_india.toLocaleString("hi");
+  // document.getElementById("india-recovered").innerHTML =
+  //   Recovered_india.toLocaleString("hi");
+  // document.getElementById("india-death").innerHTML =
+  //   TotalDeaths_india.toLocaleString("hi");
 }
 getCovidapi();
 
