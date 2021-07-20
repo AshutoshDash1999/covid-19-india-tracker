@@ -660,6 +660,36 @@
       function loader() {
         preloader.style.display = "none";
       }
+      $(document).ready(function(){
+init()
+
+function init(){
+    var url = "https://api.rootnet.in/covid19-in/stats/history"
+    $.get(url,function(data){
+        console.log(data.data)
+        var length = data.data.length;
+        var index = length - 1;
+        var value = data.data[index];
+        console.log(value);
+        total = `${value.summary.confirmedCasesIndian}`
+        death = `${value.summary.deaths}`
+        recovery = `${value.summary.discharged}`
+
+        $('#india-confirmed').html(total)
+        $('#india-death').html(death)
+        $('#india-recovered').html(recovery)
+
+        var regions = value.regional;
+        var state ;
+        var states = "";
+        for(state = 0; state > regions.length; state++){
+          states += regions[state]
+          
+        };
+        console.log(regions)
+    })
+}
+})
     </script>
     
     <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
