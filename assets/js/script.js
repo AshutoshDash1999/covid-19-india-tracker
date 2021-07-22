@@ -73,7 +73,7 @@ const options = {
   left: "unset", // default: 'unset'
   time: "0.5s", // default: '0.3s'
   mixColor: "#fff", // default: '#fff'
-  backgroundColor: "#f3f2ef", // default: '#fff'
+  backgroundColor: "#f2f2f2", // default: '#fff'
   buttonColorDark: "#100f2c", // default: '#100f2c'
   buttonColorLight: "#fff", // default: '#fff'
   saveInCookies: true, // default: true,
