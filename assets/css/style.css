@@ -119,14 +119,14 @@ body::-webkit-scrollbar-thumb {
 
 iframe {
   background: rgba(16, 65, 228, 0.3);
-  box-shadow: 0 8px 22px 0 rgba(31, 38, 135, 0.37);
+  box-shadow: 0 8px 22px 0 rgba(37, 37, 37, 0.438);
   border-radius: 10px;
   transition: all 0.3s ease-in-out;
 
 }
 
 iframe:hover{
-  box-shadow: 0 30px 50px -10px rgba(10, 16, 34, 0.493) !important;
+  box-shadow: 0 30px 50px -10px rgba(53, 53, 53, 0.562) !important;
   transform: translate3d(0px, -2px, 0px);
 }
 
